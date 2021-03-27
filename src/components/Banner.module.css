@@ -1,0 +1,30 @@
+.banner {
+  padding: 1rem 2rem;
+  color: var(--white);
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 0.5rem;
+}
+
+.heading span {
+  color: var(--accent);
+}
+
+.subheading {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.logo {
+  margin: 1rem auto;
+}
+
+.footer {
+  font-size: 18px;
+}
+
+.footer span {
+  color: var(--accent);
+}

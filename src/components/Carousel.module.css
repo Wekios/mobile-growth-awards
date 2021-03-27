@@ -1,0 +1,18 @@
+.carousel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  flex: 0 0 200px;
+  height: 200px;
+}
+
+.itemHeading {
+  color: var(--blue);
+}
+
+.avatar {
+  border-radius: 50%;
+}
