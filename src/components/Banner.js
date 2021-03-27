@@ -4,13 +4,15 @@ import { Carousel } from "components/Carousel";
 export function Banner({ heading = BannerHeading, subheading, bgImage, mainImage, people }) {
   return (
     <div className={styles.banner} style={{ backgroundImage: `url(${bgImage})` }}>
-      {heading && <BannerHeading>{heading}</BannerHeading>}
-      {subheading && <h4 className={styles.subheading}>{subheading}</h4>}
-      {mainImage && <img className={styles.logo} src={mainImage.url} alt={mainImage.alt} />}
-      <Carousel people={people} />
-      <footer className={styles.footer}>
-        <span>Presented by</span> branch 🕊
-      </footer>
+      <div className={styles.container}>
+        {heading && <BannerHeading>{heading}</BannerHeading>}
+        {subheading && <h4 className={styles.subheading}>{subheading}</h4>}
+        {mainImage && <img className={styles.logo} src={mainImage.url} alt={mainImage.alt} />}
+        <Carousel people={people} />
+        <footer className={styles.footer}>
+          <span>Presented by</span> branch 🕊
+        </footer>
+      </div>
     </div>
   );
 }

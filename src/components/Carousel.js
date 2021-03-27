@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
 import styles from "./Carousel.module.css";
+import { useEffect, useState } from "react";
 
-export function useCarousel(init, limit = 7) {
+// Didn't extract this because it seemed unnecessary with such a small component
+export function useCarousel(initialSlides, limit = 7) {
   const [activeSlide, setActiveSlide] = useState(0);
-  const [slidesArr, setSlidesArr] = useState(init);
+  const [slidesArr, setSlidesArr] = useState(initialSlides);
 
   useEffect(() => {
     const timer = setTimeout(() => {

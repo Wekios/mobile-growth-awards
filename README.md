@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Uses: Faker lib for mocking data & CSS modules for styling. Pretty simple feature with plenty of room for improvements if needed.
+
 ## Available Scripts
 
 In the project directory, you can run:
